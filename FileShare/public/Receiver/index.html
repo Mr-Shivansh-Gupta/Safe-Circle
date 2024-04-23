@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../logonobg.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Share- Receiver</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../style1.css" />
+    <link rel="stylesheet" href="../upload.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <img src="../logo.png" alt="Inshare logo" class="logo" />
+
+    <div class="screen join-screen active">
+      <div class="form ind1">
+        <h2>Share your files securely</h2>
+        <div class="form-input">
+          <label for="join-id">Join ID</label>
+          <input type="text" id="join-id" class="jbox" />
+        </div>
+        <div class="form-input">
+          <button id="receiver-start-con-btn" class="bttn1">Connect</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========After Self========= -->
+
+    <div class="screen fs-screen ">
+        <section class="upload-container">
+      <div class="wrapper">
+        <div class="files-list">
+          <!-- <div class="title">Shared files:</div> -->
+          <header>Received Files</header>
+
+          <section class="progress-area"></section>
+          <section class="uploaded-area"></section>
+        </div>
+    </section>
+      </div>
+    </div>
+    <div class="image-vector"></div>
+    <!-- =================================== -->
+
+    <!-- <div class="screen fs-screen">
+    <section class="upload-container">
+        <form action="">
+            <div class="drop-zone">
+                <div class="icon-container">
+                    <img src="file.svg" draggable="false" class="center" alt="File Icon">
+                    <img src="file.svg" draggable="false" class="left" alt="File Icon">
+                    <img src="file.svg" draggable="false" class="right" alt="File Icon">
+                </div>
+                <input type="file" id="fileInput">
+                <div class="title">Drop your Files here or, <span id="browseBtn">browse</span></div>
+            </div>
+        </form>
+        <div class="progress-container">
+            <div class="bg-progress"></div>
+
+            <div class="inner-container">
+                <div class="status">Uploading...</div>
+                <div class="percent-container">
+                    <span class="percentage" id="progressPercent">0</span>%
+                </div>
+                <div class="progress-bar"></div>
+            </div>
+
+        </div>
+        <div class="sharing-container">
+            <p class="expire">Link expires in 24 hrs</p>
+
+
+            <div class="input-container">
+                <input type="text" id="fileURL" readonly>
+                <img src="./copy-icon.svg" id="copyURLBtn" alt="copy to clipboard icon">
+            </div>
+
+
+            <p class="email-info">Or Send via Email</p>
+            <div class="email-container">
+                <form id="emailForm">
+                    <div class="filed">
+                        <label for="fromEmail">Your email</label>
+                        <input type="email" autocomplete="email" required name="from-email" id="fromEmail">
+                    </div>
+
+                    <div class="filed">
+                        <label for="toEmail">Receiver's email</label>
+                        <input type="email" required autocomplete="receiver" name="to-email" id="toEmail">
+                    </div>
+                    <div class="send-btn-container">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+    <div class="image-vector"></div>
+    <div class="toast">Sample message</div>
+    github fork button -->
+
+    <!-- <script src="index.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"
+    ></script>
+    <script type="text/javascript" src="../socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="../receiver.js"></script>
+    <!-- <script src="./script.js"></script> -->
+   
+  </body>
+</html>

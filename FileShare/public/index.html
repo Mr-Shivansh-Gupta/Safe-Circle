@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logonobg.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing-Sender</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./style1.css">
+    <link rel="stylesheet" href="./upload.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <img src="./logo.png" alt="Inshare logo" class="logo">
+
+
+     <!-- ============before========= -->
+   
+        <div class="screen join-screen active ">
+            <div class="form ind1">
+                <h2>Share your files securely</h2>
+                <div class="form-input">
+                    <button id="sender-start-con-btn" class="hov bttn1">create room</button>
+                </div>
+
+                <div class="form-input" id="join-id">
+                </div>
+
+            </div>
+        </div>
+
+ <!-- ==============After============== -->
+        <!-- <div class="screen fs-screen ">
+            <div class="file-input">
+                <label for="file-input">
+                    Click here to select files for sharing
+                </label>
+                <input type="file" id="file-input">
+            </div>
+            <div class="files-list">
+                <div class="title">Shared files:</div>
+
+            </div>
+        </div> -->
+
+
+
+
+
+
+
+    <div class="screen fs-screen">
+    <section class="upload-container">
+        <div class="wrapper">
+            <header>File Uploader JavaScript</header>
+            <form action="">
+              <input class="file-input" type="file" name="file" id="file-input" hidden>
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>Browse File to Upload</p>
+            </form>
+            <section class="progress-area"></section>
+            <!-- <div class='progress' style='width:80%'></div> -->
+            <section class="uploaded-area"></section>
+          </div>
+    </section>
+</div>
+    <div class="image-vector"></div>
+    <div class="toast">Sample message</div>
+    <!-- github fork button -->
+   
+  
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./code.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <!-- <script>
+ var html = $("#source").html();
+  document.getElementById("fource")
+  .innerHTML ="<div class='progress-bar'>"+
+  "<div class='progress' style='width:${html}%'>"+ 
+  "</div>"+
+  "</div>";
+    </script> -->
+    <!-- <script>
+      var str,
+element = document.getElementById('source');
+if (element != null) {
+    str = element.value;
+}
+else {
+    str = null;
+    console.log("not found")
+}
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--==================== FAVICON ====================-->
+  <link rel="icon" href="./assets/img/logonobg.png" />
+  <!--========== BOX ICONS LIBRARY ==========-->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!--========== Title ==========-->
+  <title>Safe Circle</title>
+
+  <!--================== LINK THUMBNAIL META TAGS ===================-->
+  <!-- MS Tile - for Microsoft apps-->
+  <meta name="msapplication-TileImage"
+    content="https://raw.githubusercontent.com/Thiagoow/UberEats-Responsive-LandingPage/master/assets/img/ThumbnailLinkImg.jpg" />
+  <!-- fb & Whatsapp -->
+  <meta property="og:site_name" content="Safe Circle" />
+  <meta property="og:title" content="🔐 Secure Community | Safe Circle" />
+  <meta property="og:description" content="A Platfrom Where User can Communicate Securly " />
+  <!-- IMG URL: -->
+  <meta property="og:image"
+    content="assets\img\logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <!--  size up to 300px. Anything above this will not work in WhatsApp -->
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+  <meta property="og:url" content="https://eats-uber.netlify.app" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrollTop show-scroll" id="scroll-top">
+    <i class="bx bx-chevron-up scrollTop_icon"></i>
+  </a>
+
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <img src="./assets/img/logo.png" alt="" srcset="" height="60px" width="60px" class=" image1">
+      <a href="/" class="nav_logo">
+        <b>
+          Safe
+          <span>Circle</span>
+        </b>
+      </a>
+
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#home" class="nav_link">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="#about" class="nav_link">About Us</a>
+          </li>
+          <li class="nav_item">
+            <a href="#services" class="nav_link">Services</a>
+          </li>
+          <li class="hidden_item">
+            <a href="#app" class="nav_link">App</a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact" class="nav_link">Contact Us</a>
+          </li>
+
+          <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+
+          <!-- <li class="nav_item"><a href="#" class=" text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg logbtn">Login</a></li> -->
+         
+        </ul>
+      </div>
+
+      <div class="nav_toggle" id="nav-toggle">
+        <!--When clicked activate the class "opened"
+          to the button tag as well to the 4 SVG lines-->
+        <button class="menu" aria-label="Abrir Menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+          <svg width="40" height="41" viewBox="0 0 100 100">
+            <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--========== HOME ==========-->
+    <section class="home" id="home">
+      <div class="home_container bd-container bd-grid">
+        <div class="home_data">
+          <h1 class="home_title">Unlock Peace of Mind</h1>
+          <h2 class="home_subtitle">Communicate with Confidence 🔐</h2>
+          <a href="./Register-page-master/index.html" class="button">Explore-Now</a>
+        </div>
+
+        <img src="./assets/img/home.png" alt="Unlock Peace of Mind: Communicate with Confidence" class="home_img" />
+      </div>
+    </section>
+
+    <!--========== ABOUT ==========-->
+    <section class="about section bd-container" id="about">
+      <div class="about_container bd-grid">
+        <div class="about_data">
+          <span class="section-subtitle about_initial">About Us</span>
+          <h2 class="section-title about_initial">
+            Experince The Secure File Share With Converstion
+          </h2>
+          <p class="about_description">
+            Unlock Peace of Mind: Communicate with Confidence 🔐
+          </p>
+          <a href="#services" class="button">Share File Securly!</a>
+        </div>
+
+        <img src="./assets/img/FILE-TRANSFER.png" alt="Ingredientes naturais" class="about_img" />
+      </div>
+    </section>
+
+    <!--========== SERVICES ==========-->
+    <section class="services section bd-container" id="services">
+      <span class="section-subtitle">We offer for you!</span>
+      <h2 class="section-title">What we do for you</h2>
+
+      <div class="services_container bd-grid">
+        <div class="services_content">
+          <img src="./assets/img/file-sharing.png" alt="file share" srcset="" class="services_img">
+
+          <h3 class="services_title">Secure And Fast File Sharing</h3>
+          <p class="services_description">
+            You can share your file securly and quickly. Peer to peer file sharing.
+          </p>
+          <div class="contact_button">
+            <a href="http://localhost:5000" target="_blank" class="button">Share File Now</a>
+          </div>
+        </div>
+
+        <div class="services_content">
+          <img class="services_img" src="./assets/img/videocall.png">
+          <h3 class="services_title">Secure Video Call</h3>
+          <p class="services_description">
+            You can Communicate on video call with anyone in world securly
+          </p>
+          <div class="contact_button">
+            <a href="http://localhost:3000" target="_blank" class="button">Call Now</a>
+          </div>
+        </div>
+
+        <div class="services_content">
+        <img src="./assets/img/chating.png" alt="" srcset="" class="services_img">
+
+          <h3 class="services_title">Chat Securly</h3>
+          <p class="services_description">
+            Safe Circle provides you to chat with video call and with sharing files it's also secure
+          </p>
+          <div class="contact_button">
+            <a href="http://localhost:3030" target="_blank" class="button">Chat Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===== APP =======-->
+
+    <!-- <section class="app section bd-container" id="app">
+      <div class="app_container bd-grid">
+        <div class="app_data">
+          <span class="section-subtitle app_initial">Comece agora!</span>
+          <h2 class="section-title app_initial">Instale nosso aplicativo</h2>
+          <p class="app_description">
+            Apenas clique abaixo, instale o aplicativo e faça seus pedidos de
+            maneira fácil e intuitiva!
+          </p>
+          <div class="app_stores">
+            <a href="#"><img src="assets/img/playStoreDownload.png" alt="" class="app_store" /></a>
+            <a href="#"><img src="assets/img/appStoreDownload.svg" alt="" class="app_store" /></a>
+          </div>
+        </div>
+
+        <img src="assets/img/movil-app.png" alt="" class="app_img" />
+      </div>
+    </section> -->
+
+    <!--========== CONTACT US ==========-->
+    <section class="contact section bd-container" id="contact">
+      <div class="contact_container bd-grid">
+        <div class="contact_data">
+          <span class="section-subtitle contact_initial">Let's Talk?</span>
+          <h2 class="section-title contact_initial">Contate-Us</h2>
+          <p class="contact_description">
+            Need some help using the website? View your requests or more details and options about our services, contact us now! We are online 24 hours a day, from Monday to Sunday! 😉
+          </p>
+        </div>
+
+        <div class="contact_button">
+          <a href="/Contact/index.html" class="button">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--========== FOOTER ==========-->
+  <footer class="footer section bd-container">
+    <div class="footer_container bd-grid">
+      <div class="footer_content">
+        <b class="footer_logo">
+          Safe
+          <span>Circle</span>
+        </b>
+
+        <span class="footer_description">The best service for you. </span>
+
+        <div>
+          <a href="#" class="footer_social"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="footer_social"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="footer_social"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Information</h3>
+        <ul>
+          <li><a href="#" class="footer_link">Privacy Policy</a></li>
+          <li><a href="#" class="footer_link">Term and Condition</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Address</h3>
+        <ul>
+          <li>G-51,Citadell Complex</li>
+          <li>VVIP Road Parvat Patiya</li>
+          <li>Surat Gujrat-395010</li>
+        </ul>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Navigation</h3>
+        <ul>
+          <li><a href="#app" class="footer_link">Login</a></li>
+          <li><a href="#contact" class="footer_link">Contact Us</a></li>
+          <!-- <li><a href="#foods" class="footer_link">Pratos da semana</a></li> -->
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer_copy">
+      &#169; Made in 2023,by
+      <a href="https://www.instagram.com/mr_mukku_/" class="footer_link" target="_blank">
+        Shivansh Gupta
+      </a>
+    </p>
+  </footer>
+
+  <!--========== SCROLL REVEAL LIBRARY ==========-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--========== MAIN JS ==========-->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
